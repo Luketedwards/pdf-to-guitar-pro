@@ -31,10 +31,11 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <h1 class="mb-4">Upload Your PDF</h1>
-                <form>
+                <form method="POST" enctype="multipart/form-data" action="{% url 'upload_pdf' %}">
+                    {% csrf_token %}
                     <div class="form-group">
                         <label for="pdfFile">Choose a PDF file:</label>
-                        <input type="file" class="form-control-file" id="pdfFile">
+                        <input type="file" class="form-control-file" id="pdfFile" name="pdf">
                     </div>
                     <button type="submit" class="btn btn-primary">Convert to Guitar Pro</button>
                 </form>

@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-f4p!i#eclvdug+79ilyb(are$)^6c)%@09=i23+msa61vsp&c0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://8000-luketedward-pdftoguitar-ejsx4wflkei.ws-eu93.gitpod.io', 'localhost']
+
+
 
 
 # Application definition
@@ -120,3 +122,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = ['https://8000-luketedward-pdftoguitar-ejsx4wflkei.ws-eu93.gitpod.io']
